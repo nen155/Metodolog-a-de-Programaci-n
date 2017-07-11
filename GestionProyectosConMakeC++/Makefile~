@@ -1,0 +1,13 @@
+Make con Macro:
+AR= ar
+CXX = g++
+CXXFLAGS= -Wall -g
+LDFLAGS= -L. -lformas
+punto.o : punto.h punto.cpp
+	$(CXX) -c $(CXXFLAGS) -o punto.o punto.cpp
+circulo.o : circulo.h circulo.cpp
+	$(CXX) -c $(CXXFLAGS) -o circulo.o circulo.cpp
+central.o : central.h central.cpp
+	$(CXX) -c $(CXXFLAGS) -o central.o central.cpp
+libformas.a : punto.o circulo.o
+	$(AR) rvs libformas.a punto.o circulo.o

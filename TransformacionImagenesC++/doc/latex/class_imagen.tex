@@ -1,0 +1,242 @@
+\hypertarget{class_imagen}{\section{Referencia de la Clase Imagen}
+\label{class_imagen}\index{Imagen@{Imagen}}
+}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_imagen_a4cc181b097a76bc3204161d98cfb5fa6}{Filas} () const 
+\begin{DoxyCompactList}\small\item\em Función Filas. \end{DoxyCompactList}\item 
+int \hyperlink{class_imagen_aa7fb553d54e0d1ad019b61d65ee11935}{Columnas} () const 
+\begin{DoxyCompactList}\small\item\em Función Columnas. \end{DoxyCompactList}\item 
+void \hyperlink{class_imagen_a483a65938e025af27c8a8e30bd0d595d}{Set} (int i, int j, unsigned char v)
+\begin{DoxyCompactList}\small\item\em Función Set. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{class_imagen_afbfd81bbf28620cc319f2423b202f1da}{Get} (int i, int j) const 
+\begin{DoxyCompactList}\small\item\em Función Get. \end{DoxyCompactList}\item 
+bool \hyperlink{class_imagen_ad6ec2b90fc9213cc429cbedc60a7dbfc}{Leer\+Imagen} (const char nombre\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Función Leer una imagen de disco. \end{DoxyCompactList}\item 
+bool \hyperlink{class_imagen_a1c5244502b596289c19eec4c7e8d4c5b}{Escribir\+Imagen} (const char nombre\mbox{[}$\,$\mbox{]}) const 
+\begin{DoxyCompactList}\small\item\em Función Escribir una imagen en disco. \end{DoxyCompactList}\item 
+\hyperlink{class_imagen_aebf637b27aa4c1bcefbec6b61f28a1b2}{Imagen} (const \hyperlink{class_imagen}{Imagen} \&img)
+\begin{DoxyCompactList}\small\item\em Función Constructor copia. \end{DoxyCompactList}\item 
+\hyperlink{class_imagen_a4b397c4a3dc0794cab351f96dc9390fd}{Imagen} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Función Constructor con parámetros. \end{DoxyCompactList}\item 
+\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen} ()
+\begin{DoxyCompactList}\small\item\em Función Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen} ()
+\begin{DoxyCompactList}\small\item\em Función Destructor por defecto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_imagen_aebf637b27aa4c1bcefbec6b61f28a1b2}{\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection[{Imagen}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const {\bf Imagen} \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_aebf637b27aa4c1bcefbec6b61f28a1b2}
+
+
+Función Constructor copia. 
+
+Recibe como entrada un parámetro, con la imagen que se quiere copiar y la copia en la imagen a la que se le asigne y la que haya sido construida con este construtor. 
+\begin{DoxyParams}{Parámetros}
+{\em img} & Una imagen con los datos que se quieran copiar en otra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una imagen copia de la pasada por parámetro.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen}{Imagen} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_a4b397c4a3dc0794cab351f96dc9390fd}{\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection[{Imagen}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::\+Imagen (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_a4b397c4a3dc0794cab351f96dc9390fd}
+
+
+Función Constructor con parámetros. 
+
+Recibe como entrada dos parámetros, uno el total de filas y otro el total de columnas y crea una imagen con el tamaño de fxc. 
+\begin{DoxyParams}{Parámetros}
+{\em f} & El total de filas de la imagen. \\
+\hline
+{\em c} & El total de columnas de la imagen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen}{Imagen} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection[{Imagen}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::\+Imagen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}
+
+
+Función Constructor por defecto. 
+
+Crea una imagen con filas y columnas a 0 y el buffer a 0.
+
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{\index{Imagen@{Imagen}!````~Imagen@{$\sim$\+Imagen}}
+\index{````~Imagen@{$\sim$\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{$\sim$\+Imagen}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::$\sim$\+Imagen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}
+
+
+Función Destructor por defecto. 
+
+Borra la dirección donde apunta el puntero buffer.
+
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_imagen_aa7fb553d54e0d1ad019b61d65ee11935}{\index{Imagen@{Imagen}!Columnas@{Columnas}}
+\index{Columnas@{Columnas}!Imagen@{Imagen}}
+\subsubsection[{Columnas}]{\setlength{\rightskip}{0pt plus 5cm}int Imagen\+::\+Columnas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_imagen_aa7fb553d54e0d1ad019b61d65ee11935}
+
+
+Función Columnas. 
+
+Devuelve el numero de columnas total en el buffer de la imagen \begin{DoxyReturn}{Devuelve}
+El numero de columnas.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_aa7fb553d54e0d1ad019b61d65ee11935}{Columnas} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_a1c5244502b596289c19eec4c7e8d4c5b}{\index{Imagen@{Imagen}!Escribir\+Imagen@{Escribir\+Imagen}}
+\index{Escribir\+Imagen@{Escribir\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{Escribir\+Imagen}]{\setlength{\rightskip}{0pt plus 5cm}bool Imagen\+::\+Escribir\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const char}]{nombre\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const}}\label{class_imagen_a1c5244502b596289c19eec4c7e8d4c5b}
+
+
+Función Escribir una imagen en disco. 
+
+Recibe como entrada un parámetro, con la ruta y el nombre de la imagen y escribe en disco la imagen resultante. 
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & Ruta del archivo y el nombre de la imagen ej\+: \char`\"{}d\+:\textbackslash{}datos\textbackslash{}lenna.\+pgm\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido éxito en la escritura.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_ad6ec2b90fc9213cc429cbedc60a7dbfc}{Leer\+Imagen} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_a4cc181b097a76bc3204161d98cfb5fa6}{\index{Imagen@{Imagen}!Filas@{Filas}}
+\index{Filas@{Filas}!Imagen@{Imagen}}
+\subsubsection[{Filas}]{\setlength{\rightskip}{0pt plus 5cm}int Imagen\+::\+Filas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_imagen_a4cc181b097a76bc3204161d98cfb5fa6}
+
+
+Función Filas. 
+
+Devuelve el numero de filas total en el buffer de la imagen \begin{DoxyReturn}{Devuelve}
+El numero de filas.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_aa7fb553d54e0d1ad019b61d65ee11935}{Columnas} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_afbfd81bbf28620cc319f2423b202f1da}{\index{Imagen@{Imagen}!Get@{Get}}
+\index{Get@{Get}!Imagen@{Imagen}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Imagen\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_imagen_afbfd81bbf28620cc319f2423b202f1da}
+
+
+Función Get. 
+
+Obtiene el dato de la fila y columna del buffer de la imagen.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & Fila de donde queremos obtener el dato. \\
+\hline
+{\em j} & Columna de donde queremos obtener el dato.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_a483a65938e025af27c8a8e30bd0d595d}{Set} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_ad6ec2b90fc9213cc429cbedc60a7dbfc}{\index{Imagen@{Imagen}!Leer\+Imagen@{Leer\+Imagen}}
+\index{Leer\+Imagen@{Leer\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{Leer\+Imagen}]{\setlength{\rightskip}{0pt plus 5cm}bool Imagen\+::\+Leer\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const char}]{nombre\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_ad6ec2b90fc9213cc429cbedc60a7dbfc}
+
+
+Función Leer una imagen de disco. 
+
+Recibe como entrada un parámetro, con la ruta y el nombre de la imagen y almacena en un buffer los bytes de esa imagen. 
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & Ruta del archivo y el nombre de la imagen ej\+: \char`\"{}d\+:\textbackslash{}datos\textbackslash{}lenna.\+pgm\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido éxito en la lectura.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_a1c5244502b596289c19eec4c7e8d4c5b}{Escribir\+Imagen} 
+\end{DoxySeeAlso}
+\hypertarget{class_imagen_a483a65938e025af27c8a8e30bd0d595d}{\index{Imagen@{Imagen}!Set@{Set}}
+\index{Set@{Set}!Imagen@{Imagen}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void Imagen\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{unsigned char}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_imagen_a483a65938e025af27c8a8e30bd0d595d}
+
+
+Función Set. 
+
+Pone un dato en la fila y columna del buffer de la imagen.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & Fila donde queremos poner el dato. \\
+\hline
+{\em j} & Columna donde queremos poner el dato. \\
+\hline
+{\em v} & El dato que queremos asignar en el buffer de la imagen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{class_imagen_afbfd81bbf28620cc319f2423b202f1da}{Get} 
+\end{DoxySeeAlso}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{imagen_8h}{imagen.\+h}\end{DoxyCompactItemize}
